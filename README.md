@@ -1,7 +1,5 @@
-# Splurket
-Splurket the software store
+# Splurket- Development
+S
+This repository is used for development. Everyone can work on this and add their changes. 
 
-This is a test
-
-
-Ease access: https://splurket.com/index.html
+Ease access: 
