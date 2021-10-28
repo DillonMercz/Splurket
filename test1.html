@@ -1,0 +1,30 @@
+<script>
+var myHeaders = new Headers();
+myHeaders.append("Host", "www.goat.com");
+myHeaders.append("X-PX-AUTHORIZATION", "3:4c00a81277fedfacbbb61a71eacf60afab102b7d7be8404a6ce977d0e94c8b4d:N2cIeAk9cYmrq/ghBK1tpWg3lKhvw1ljdTszhCctfGnRNcMGPjOfdlUBowU+NKCXLVbi4TitKuJHfPeNryOlhg==:1000:pcJ7AWqGHmTkS8xx8gsobwHuMJd81FawlYfaHb0C+82e4zlUe5quOiY+a/SP4x3RTHGkRkhS4E0aBnN+x4OZgzAjQ3IAH8QeVbn8IosBxzLSYCg6c8RFZiintFVoDQDNazJEfMDE264QQL34HAioqg9gGEb0epHdfitmtG4yd/bLHm8a7dX/syo1l5i6WMoTTtuPCv0mP7QKxn2oSmDHuQ==");
+myHeaders.append("Accept", "application/json");
+myHeaders.append("Authorization", "Token token=\"18pxqHD9M2fQDLqWimLs\"");
+myHeaders.append("Accept-Language", "en-us");
+myHeaders.append("x-emb-st", "1635254958251");
+myHeaders.append("If-None-Match", "W/\"7daff3db770336251923614f19579b15\"");
+myHeaders.append("Content-Length", "106");
+myHeaders.append("User-Agent", "GOAT/2.48.0 (iPhone; iOS 14.4; Scale/2.00) Locale/en");
+myHeaders.append("Connection", "keep-alive");
+myHeaders.append("x-emb-id", "B5143C11E5954BB4B873EBED096F2872");
+myHeaders.append("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
+myHeaders.append("Cookie", "__cf_bm=IwG1RMGOkONaW5bfkd.kqbnFIxXzLeZXEcl4tc9oOT8-1635462102-0-AZqvQXLfeTFdngFNKz1luIxqar3ye57rQiotSeBp+O5etPdLkpC41tiko2aB9LlUfbWUCB1uGCZ005mbDvCh1Y8=");
+
+var raw = "checkNewFees=0&want%5BofferDuration%5D=150&want%5BofferAmountCents%5D=1000&want%5BresetOfferStartTime%5D=10";
+
+var requestOptions = {
+  method: 'PATCH',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://www.goat.com/api/v1/wants/234506594", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+</script>
