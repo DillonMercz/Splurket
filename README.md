@@ -1,4 +1,5 @@
-# Splurket
-Splurket the software store
+#Testing 
 
-Ease access: https://splurket.com/index.html
+This branch is used to test new features added on the site before being merged to the main repo
+
+
